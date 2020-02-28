@@ -1,5 +1,5 @@
 .container {
-  padding: 2 rem;
+  padding: 1.5rem;
   header {
     display: flex;
     justify-content: center;
@@ -7,6 +7,32 @@
       display: flex;
       justify-content: space-around;
       width: 50%;
+      a {
+        text-decoration: none;
+        color: @navBtnText;
+        background: @navBtnColor;
+        padding: 0.75rem 1rem;
+        border-radius: 10px;
+        &:hover {
+          background: @bg-color;
+          color: @font-color;
+        }
+      }
     }
+  }
+  body {
+    h1 {
+      font-size: 3rem;
+    }
+    p {
+      font-size: 2rem;
+    }
+  }
+}
+
+// Mobile design
+@media @mobile {
+  .container {
+    padding: 1rem;
   }
 }

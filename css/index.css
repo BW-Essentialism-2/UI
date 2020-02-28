@@ -127,7 +127,7 @@ table {
   border-spacing: 0;
 }
 .container {
-  padding: 2 rem;
+  padding: 1.5rem;
 }
 .container header {
   display: flex;
@@ -137,4 +137,26 @@ table {
   display: flex;
   justify-content: space-around;
   width: 50%;
+}
+.container header nav a {
+  text-decoration: none;
+  color: lightgray;
+  background: darkgray;
+  padding: 0.75rem 1rem;
+  border-radius: 10px;
+}
+.container header nav a:hover {
+  background: black;
+  color: white;
+}
+.container body h1 {
+  font-size: 3rem;
+}
+.container body p {
+  font-size: 2rem;
+}
+@media (max-width: 500px) {
+  .container {
+    padding: 1rem;
+  }
 }
