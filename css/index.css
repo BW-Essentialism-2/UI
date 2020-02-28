@@ -211,7 +211,15 @@ body {
   color: gray;
 }
 .container {
-  padding: 1.5rem;
+  padding: 2rem;
+}
+.container h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.05rem;
+  line-height: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
 }
 .container .welcome {
   width: 100%;
@@ -220,32 +228,39 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
 }
-.container .welcome h1 {
-  font-size: 2rem;
-  font-weight: 700;
-  letter-spacing: 0.05rem;
-  line-height: 1.2rem;
-  margin-bottom: 1rem;
-}
 .container .welcome p {
   font-size: 1rem;
   font-weight: 400;
   letter-spacing: 0.05rem;
   line-height: 1.2rem;
-  margin: 0.5rem 0;
   width: 45%;
   padding: 1rem;
+  padding-top: 0;
 }
 .container .welcome img {
-  width: 50%;
+  width: 45%;
+  height: 45%;
   border-radius: 5px;
   margin-bottom: 1rem;
+}
+.container .reverse {
+  flex-direction: row-reverse;
 }
 @media (max-width: 500px) {
   .container {
     padding: 1rem;
   }
   .container .welcome {
+    flex-direction: column;
+  }
+  .container .welcome p {
+    width: 95%;
+    margin: 1rem 0;
+  }
+  .container .welcome img {
     width: 100%;
+  }
+  .container .cave img {
+    display: none;
   }
 }
