@@ -126,34 +126,38 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-.container {
-  padding: 1.5rem;
-}
-.container header {
+.container .header {
   display: flex;
   justify-content: center;
 }
-.container header nav {
+.container .header nav {
   display: flex;
   justify-content: space-around;
   width: 50%;
+  padding-bottom: 1rem;
 }
-.container header nav a {
+.container .header nav a {
   text-decoration: none;
   color: lightgray;
   background: darkgray;
   padding: 0.75rem 1rem;
   border-radius: 10px;
+  font-size: 1.5rem;
 }
-.container header nav a:hover {
+.container .header nav a:hover {
   background: black;
   color: white;
 }
-.container body h1 {
-  font-size: 3rem;
+.container {
+  padding: 1.5rem;
 }
-.container body p {
-  font-size: 2rem;
+.container .welcome h1 {
+  font-size: 2.5rem;
+}
+.container .welcome p {
+  font-size: 1.5rem;
+  padding: 1rem 0;
+  margin-bottom: 1rem;
 }
 @media (max-width: 500px) {
   .container {
