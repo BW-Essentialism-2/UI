@@ -1,20 +1,35 @@
 .container {
   .header {
-    display: flex;
-    justify-content: right;
+    .flex(flex, center, row, nowrap);
+    // display: flex;
+    // justify-content: center;
     nav {
-      display: flex;
-      justify-content: space-around;
-      width: 50%;
+      .flex(flex, space-around, row, nowrap);
+      // display: flex;
+      // justify-content: space-around;
       padding-bottom: 1rem;
       a {
+        .font(1.2rem, 600, .05rem, 1rem);
         text-decoration: none;
         color: @navBtnText;
         background: @navBtnColor;
         padding: 0.75rem 1rem;
-        font-size: 1rem;
+        text-align: center;
         &:hover {
           color: @hoverColor;
+        }
+      }
+    }
+  }
+}
+
+@media @mobile {
+  .container {
+    .header {
+      nav {
+        .flex(flex, center, column, nowrap);
+        a {
+          margin: .5rem 0;
         }
       }
     }

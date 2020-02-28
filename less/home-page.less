@@ -1,24 +1,32 @@
 .container {
   padding: 1.5rem;
   .welcome {
+    width: 100%;
+    .flex(flex, space-between, row, wrap);
     h1 {
-      font-size: 2rem;
-      font-weight: 700;
-      letter-spacing: .05rem;
+      .font(2rem, 700, .05rem, 1.2rem);
+      margin-bottom: 1rem;
     }
     p {
-      font-size: 1rem;
-      font-weight: 400;
-      letter-spacing: .05rem;
-      padding: 1rem 0;
+      .font(1rem, 400, .05rem, 1.2rem);
+      margin: .5rem 0;
+      width: 45%;
+      padding: 1rem;
+    }
+    img {
+      width: 50%;
+      border-radius: 5px;
       margin-bottom: 1rem;
     }
   }
 }
 
-// Mobile design
-// @media @mobile {
-//   .container {
-//     padding: 1rem;
-//   }
-// }
+//Mobile design
+@media @mobile {
+  .container {
+    padding: 1rem;
+    .welcome {
+      width: 100%;
+    }
+  }
+}

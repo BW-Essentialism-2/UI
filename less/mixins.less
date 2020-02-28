@@ -1,9 +1,14 @@
-// Button animation
-
-
-
 // Display flex
-.flex(@display, @justify) {
-  dispaly: @display;
+.flex(@display, @justify, @direction, @wrap) {
+  display: @display;
   justify-content: @justify;
+  flex-direction: @direction;
+  flex-wrap: @wrap;
+}
+
+.font(@font-size, @weight, @letter-spacing, @line-height) {
+  font-size: @font-size;
+  font-weight: @weight;
+  letter-spacing: @letter-spacing;
+  line-height: @line-height;
 }
