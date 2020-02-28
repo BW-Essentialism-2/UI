@@ -126,9 +126,12 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+body {
+  font-family: 'Montserrat';
+}
 .container .header {
   display: flex;
-  justify-content: center;
+  justify-content: right;
 }
 .container .header nav {
   display: flex;
@@ -138,29 +141,58 @@ table {
 }
 .container .header nav a {
   text-decoration: none;
-  color: lightgray;
-  background: darkgray;
+  color: white;
+  background: black;
   padding: 0.75rem 1rem;
-  border-radius: 10px;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 .container .header nav a:hover {
-  background: black;
+  color: lightgray;
+}
+.container .footer nav {
+  margin: 3rem 0;
+}
+.container .footer nav a {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+  padding-top: 0.5rem;
+}
+.container {
+  padding: 1.5rem;
+}
+.container .about h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.05rem;
+}
+.container .signup nav {
+  margin-bottom: 1rem;
+}
+.container .signup nav a {
+  text-decoration: none;
   color: white;
+  background: black;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+}
+.container .signup nav a:hover {
+  color: lightgray;
 }
 .container {
   padding: 1.5rem;
 }
 .container .welcome h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.05rem;
 }
 .container .welcome p {
-  font-size: 1.5rem;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0.05rem;
   padding: 1rem 0;
   margin-bottom: 1rem;
-}
-@media (max-width: 500px) {
-  .container {
-    padding: 1rem;
-  }
 }
