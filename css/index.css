@@ -131,9 +131,12 @@ body {
 }
 .container .header {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-direction: row;
   flex-wrap: nowrap;
+}
+.container .header img {
+  width: 9rem;
 }
 .container .header nav {
   display: flex;
@@ -157,6 +160,15 @@ body {
   color: gray;
 }
 @media (max-width: 500px) {
+  .container .header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .container .header a {
+    margin: auto;
+  }
   .container .header nav {
     display: flex;
     justify-content: center;
@@ -165,6 +177,11 @@ body {
   }
   .container .header nav a {
     margin: 0.5rem 0;
+  }
+}
+@media (max-width: 650px) {
+  .container h1 {
+    margin-top: 2rem;
   }
 }
 .container .footer nav {
@@ -229,13 +246,13 @@ body {
   flex-wrap: wrap;
 }
 .container .welcome p {
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: 400;
   letter-spacing: 0.05rem;
-  line-height: 1.2rem;
+  line-height: 1.7rem;
   width: 45%;
-  padding: 1rem;
-  padding-top: 0;
+  padding: 7rem 3rem;
+  padding-bottom: 0;
 }
 .container .welcome img {
   width: 45%;
@@ -245,6 +262,33 @@ body {
 }
 .container .reverse {
   flex-direction: row-reverse;
+}
+@media (max-width: 1000px) {
+  .container .welcome p {
+    font-size: 1.1rem;
+    padding-top: 3rem;
+  }
+}
+@media (max-width: 800px) {
+  .container .welcome p {
+    font-size: 0.8rem;
+    padding: 1rem;
+  }
+  .container .welcome img {
+    margin-top: 2rem;
+    border-radius: 5px;
+  }
+  .container .welcome .reverse {
+    margin-top: 1rem;
+  }
+}
+@media (max-width: 650px) {
+  .container .welcome img {
+    margin-top: 3rem;
+  }
+  .container .reverse img {
+    margin-top: 1rem;
+  }
 }
 @media (max-width: 500px) {
   .container {
@@ -259,6 +303,7 @@ body {
   }
   .container .welcome img {
     width: 100%;
+    margin-top: 0;
   }
   .container .cave img {
     display: none;

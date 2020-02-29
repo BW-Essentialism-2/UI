@@ -1,8 +1,9 @@
 .container {
   .header {
-    .flex(flex, center, row, nowrap);
-    // display: flex;
-    // justify-content: center;
+    .flex(flex, space-between, row, nowrap);
+    img {
+      width: 9rem;
+    }
     nav {
       .flex(flex, space-around, row, nowrap);
       // display: flex;
@@ -26,12 +27,24 @@
 @media @mobile {
   .container {
     .header {
+      .flex(flex, center, column, nowrap);
+      a {
+        margin: auto;
+      }
       nav {
         .flex(flex, center, column, nowrap);
         a {
           margin: .5rem 0;
         }
       }
+    }
+  }
+}
+
+@media @tablet1 {
+  .container {
+    h1 {
+      margin-top: 2rem;
     }
   }
 }

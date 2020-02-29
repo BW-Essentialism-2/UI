@@ -10,10 +10,11 @@
     .flex(flex, space-between, row, wrap);
 
     p {
-      .font(1rem, 400, .05rem, 1.2rem);;
+      .font(1.5rem, 400, .05rem, 1.7rem);;
       width: 45%;
-      padding: 1rem;
-      padding-top: 0;
+      padding: 7rem 3rem;
+      padding-bottom: 0;
+
     }
     img {
       width: 45%;
@@ -27,7 +28,54 @@
   }
 }
 
-//Mobile design
+// Styling changes at 1000px and below
+@media @larger {
+  .container {
+    .welcome {
+      p {
+        font-size: 1.1rem;
+        padding-top: 3rem;
+      }
+    }
+  }
+}
+
+// Styling changes at 800px and below
+@media @tablet2 {
+  .container {
+    .welcome {
+      p {
+        font-size: .8rem;
+        padding: 1rem;
+      }
+      img {
+        margin-top: 2rem;
+        border-radius: 5px;
+      }
+      .reverse {
+        margin-top: 1rem;
+      }
+    }
+  }
+}
+
+// Styling changes at 650px and below
+@media @tablet1 {
+  .container {
+    .welcome {
+      img {
+        margin-top: 3rem;
+      }
+    }
+    .reverse {
+      img {
+        margin-top: 1rem;
+      }
+    }
+  }
+}
+
+// Styling changes at 500px and below
 @media @mobile {
   .container {
     padding: 1rem;
@@ -39,6 +87,7 @@
       }
       img {
         width: 100%;
+        margin-top: 0;
       }
     }
     .cave {
