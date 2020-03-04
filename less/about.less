@@ -3,6 +3,49 @@
   .about {
     h1 {
       .font(2rem, 700, .05rem, 1rem);
+      margin-bottom: 3rem;
+    }
+  }
+  .people {
+    .flex(flex, space-between, row, wrap);
+    img {
+      width: 65%;
+      border-radius: 5px;
+      margin: auto;
+    }
+    a {
+      text-decoration: none;
+      margin: auto;
+      width: 49%;
+      .font(1rem, 400, .05rem, 1.7rem);
+      color: @navBtnText;
+      text-align: center;
+      margin-bottom: 1.5rem;
+      &:hover {
+        color: @hoverColor;
+      }
+    }
+    p {
+      .font(1rem, 400, .05rem, 1.7rem);
+      margin: auto;
+    }
+    .person {
+      .flex(flex, flex-start, column, nowrap);
+      width: 49%;
+    }
+  }
+}
+
+@media @mobile {
+  .container {
+    .people {
+      width: 95%;
+      img {
+        width: 75%;
+      }
+      .person {
+        width: 100%;
+      }
     }
   }
 }
